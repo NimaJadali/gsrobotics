@@ -1,7 +1,8 @@
 import sys, getopt
 import cv2
 from gelsight import gsdevice
-
+import serial
+arduino = serial.Serial('COM1', 9600, timeout=.1)
 
 def main(argv):
 
